@@ -1,0 +1,25 @@
+{% extends 'movies/layout.html' %}
+
+{% block content %}
+
+<h2 class="center-align red lighten-3">
+    {{movie.title}}
+</h2>
+<div class="card">
+    <div class="card-content" >
+        <b>Desctiption:</b> 
+        {{movie.description}}
+    </div>
+    <div class="card-content">
+        <b>Rating:</b>
+        {{movie.rating}}
+    </div>
+    <div class="card-action">
+        {{movie.release_date}}
+    </div>
+</div>
+<a href="/movies" class="btn">
+    Go Back
+</a>
+
+{% endblock %}

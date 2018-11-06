@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\movies",
+    "\\movies\\migrations",
+    "\\movies\\templates",
+    "\\movies\\templates\\movies",
+    "\\rottenPotatoes"
+  ],
+  "SelectedNode": "\\movies\\models.py",
+  "PreviewInSolutionExplorer": false
+}

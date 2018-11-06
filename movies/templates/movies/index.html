@@ -1,0 +1,15 @@
+{% extends 'movies/layout.html' %}
+{% block content %}
+
+<h3 class="center-align">{{title}}</h3>
+<ul class="collection">
+    {% for movie in movies %}
+    <li class="collection-item">
+        <a href="movies/details/{{movie.id}}">
+            {{movie.title}}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
