@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
-import django-database-url
+import dj-database-url
 
 db_from_env = dj_database_url.config()
 DATABASES['default'].update(db_from_env)
