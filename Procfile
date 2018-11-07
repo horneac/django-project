@@ -1,0 +1,1 @@
+web: gunicorn rottenPotatoes.wsgi --log-file -
