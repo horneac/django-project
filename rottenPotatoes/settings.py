@@ -74,16 +74,27 @@ WSGI_APPLICATION = 'rottenPotatoes.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.mysql',
+#        'NAME': 'rottenPotatoes',
+#        'USER': 'root',
+#        'PASSWORD': '123456',
+#        'HOST': 'localhost',
+#        'PORT': ''
+#    }
+#}
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2'
         'NAME': 'rottenPotatoes',
         'USER': 'root',
-        'PASSWORD': '123456',
+        'PASSWORD': 'password',
         'HOST': 'localhost',
-        'PORT': ''
+        'PORT': '',
+        }
     }
-}
 
 
 # Password validation
