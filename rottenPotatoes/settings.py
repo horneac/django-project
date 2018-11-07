@@ -11,9 +11,8 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
-import dj-database-url
 
-db_from_env = dj_database_url.config()
+db_from_env = os.environ.get('DATABASE_URL')
 DATABASES['default'].update(db_from_env)
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
